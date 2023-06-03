@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     res.render('sucesso');
 });
-app.listen(8000)
+app.listen(8080)
 console.log("servidor rodando...")
