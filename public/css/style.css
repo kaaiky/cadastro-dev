@@ -65,7 +65,6 @@ form {
     height: 4rem;
     transition: all 500ms ease-out;
 }
-
 .campo select option {
     padding-right: 1em;
 }

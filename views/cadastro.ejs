@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <title>cadastro</title>
-    <link rel="stylesheet" href="/css/style.css">
 </head>
-
 <body>
     <%- include('./header.ejs') %>
         <form method="post">
             <fieldset class="grupo">
                 <div class="componentes">
                     <label>Nome:</label>
-                    <input type="text" name="nome" required>
+                    <input type="text" name="nome" >
                 </div>
                 <div class="componentes">
                     <label>Email:</label>
-                    <input type="email" required>
+                    <input type="email" name="email">
+                </div>
+                <div class="componentes">
+                    <label>CPF:</label>
+                    <input type="number" name="CPF" >
+                </div>
+                <div class="componentes">
+                    <label>celular:</label>
+                    <input type="number" name=celular" >
+                </div>
+                <div class="componentes">
+                    <label>Cidade:</label>
+                    <input type="text" name="Cidade" >
                 </div>
                 <div class="componentes">
                     <label>Senha:</label>
-                    <input type="password" name="password" required>
+                    <input type="password" name="password" >
                 </div>
                 
             </fieldset>
@@ -52,7 +61,7 @@
                         <option>sênior</option>
                     </select>
                 </div>
-
+                
             </fieldset>
             <fieldset class="grupo">
                 <div>
@@ -85,5 +94,7 @@
             </div>
             
         </form>
+        
+    <%- include('rodape') %>
 </body>
 </htmml>
