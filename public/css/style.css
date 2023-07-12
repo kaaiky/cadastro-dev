@@ -8,6 +8,11 @@ body {
 fieldset {
     border: 0;
 }
+.inpt{
+    border-radius: 5px;
+    width: 600px;
+    padding: 8px;
+}
 #cabecalho {
     padding: 30px;
     background-color: #162224;
@@ -32,7 +37,7 @@ form {
     text-align: center;
     margin: 20px;
     border: 1px solid black;
-    border-radius: 32px;
+    border-radius:25px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,7 +60,7 @@ form {
     text-align: center;
     padding: 1rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: none;
     background: linear-gradient(10deg, #02444d 0%, #05444d 100%);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -84,4 +89,5 @@ textarea {
 }
 .botao-ipt {
     text-align: center;
+  
 }

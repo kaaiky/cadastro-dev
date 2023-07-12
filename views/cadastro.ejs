@@ -2,83 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <title>cadastro</title>
+    
 </head>
 <body>
     <%- include('./header.ejs') %>
         <form method="post">
-            <fieldset class="grupo">
-                <div class="componentes">
-                    <label>Nome:</label>
-                    <input type="text" name="nome" >
-                </div>
-                <div class="componentes">
-                    <label>Email:</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="componentes">
-                    <label>CPF:</label>
-                    <input type="number" name="CPF" >
-                </div>
-                <div class="componentes">
-                    <label>celular:</label>
-                    <input type="number" name=celular" >
-                </div>
-                <div class="componentes">
-                    <label>Cidade:</label>
-                    <input type="text" name="Cidade" >
-                </div>
-                <div class="componentes">
-                    <label>Senha:</label>
-                    <input type="password" name="password" >
-                </div>
-                
+            <fieldset class="grupo"> 
+                <input class="inpt" type="text" placeholder="nome" name="nome">
+                <input class="inpt" type="text" placeholder="email" name="email">
+                <input class="inpt" type="number" placeholder="cpf" name="cpf">
+                <input class="inpt" type="number" placeholder="celular" name="celular">
+                <input class="inpt" type="password" placeholder="senha" name="senha">
             </fieldset>
+                
             <fieldset class="grupo">
                 <div class="componentes-2">
                     <label>Qual dessas aplicações você desenvolve:</label>
                     <label>
-                        <input type="radio" name="devWeb" value="front-end">
+                        <input type="radio" name="devWeb" value="front-end" name="front-end">
                         front-end
                     </label>
                     <label>
-                        <input type="radio" name="devWeb" value="back-end">
+                        <input type="radio" name="devWeb" value="back-end" name="back-end">
                         back-end
                     </label>
                     <label>
-                        <input type="radio" name="devWeb" value="full-stack">
+                        <input type="radio" name="devWeb" value="full-stack" name="full-stack">
                         full-stack
                     </label>
                     <div>
             </fieldset>
-
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="senioridade"><strong>senioridade</strong></label>
-                    <select id="senioridade">
-                        <option value="selected disable value">selecione</option>
-                        <option>junior</option>
-                        <option>plêno</option>
-                        <option>sênior</option>
-                    </select>
-                </div>
                 
             </fieldset>
             <fieldset class="grupo">
                 <div>
                     <label>Qual dessas linguagens você tem interesse:</label>
-                    <input type="checkbox" name="devWeb" value="pyton">
+                    <input type="checkbox" name="devWeb" value="pyton" name="pyton">
                     pyton
                     </label>
                     <label>
-                        <input type="checkbox" name="devWeb" value="php">
+                        <input type="checkbox" name="devWeb" value="php" name="php">
                         php
                     </label>
                     <label>
-                        <input type="checkbox" name="devWeb" value="java">
+                        <input type="checkbox" name="devWeb" value="java" name="java">
                         java
                     </label>
                     <label>
-                        <input type="checkbox" name="devWeb" value="java script">
+                        <input type="checkbox" name="devWeb" value="java script" name="java script">
                         java script
                     </label>
                 </div>
@@ -95,6 +66,9 @@
             
         </form>
         
+        <form action="/lista" method="post">
+            <input type="submit" value="ver lista">
+        </form>
     <%- include('rodape') %>
 </body>
 </htmml>

@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista</title>
-    <link rel="stylesheet" href="/css/style.css">
+    
 </head>
 <body>
 
-    <%- include('./header.ejs') %>
-
-    <%if(!dados.includes('@')) { %>
-        esse dado não existe!
-        <%} else {
-        dados.forEach(dados => {%>
+    <%if(files =='undefined') {%>
+        dados não existem
+        <%} else { files.forEach(elem => { %>
+           <a href="/<%-elem%>">  <%=elem%> </a> <a href="delete/<%-elem%>"> <img src="/img/lixeira.png" alt="" width="30px" height="30px"></a> <br>
+           <%})};%>
 
     <%- include('rodape') %>
-    
+
 </body>
 </html>

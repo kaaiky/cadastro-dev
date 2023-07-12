@@ -10,9 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "fs": "^0.0.1-security",
     "global": "^4.4.0",
     "nodemon": "^2.0.22"
   },
-  "devDependencies": {},
   "description": ""
 }
