@@ -30,5 +30,8 @@ app.get('/delete/:email', (req,res)=>{
     res.send("dados apagados!")
 })
 
+
+
+
 app.listen(8080)
 console.log("servidor rodando...")
